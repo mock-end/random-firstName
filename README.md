@@ -20,8 +20,11 @@ $ npm install --save random-firstName
 var randomFirstName = require('random-firstName');
 
 // API
-// - randomFirstName();
-// - randomFirstName(gender);
+// - randomFirstName([options]);
+
+// options
+// - gender
+
 
 randomFirstName();
 // => 'Leila'
@@ -30,7 +33,7 @@ randomFirstName();
 Optionally specify a gender to limit first names to that gender:
 
 ```js
-randomFirstName('female');
+randomFirstName({ gender: 'female' });
 // => 'Emma'
 ```
 

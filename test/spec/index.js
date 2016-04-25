@@ -15,7 +15,7 @@ describe('random-firstName: ', function () {
 
     while (count--) {
       expect(randomFirstName()).to.be.a('string');
-      expect(randomFirstName('male')).to.be.oneOf(firstNames.male);
+      expect(randomFirstName({ gender: 'male' })).to.be.oneOf(firstNames.male);
     }
   });
 });
